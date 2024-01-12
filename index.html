@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- .js Link -->
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link for bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Heading Section -->
+    <header>
+        <!-- Navigation Section -->
+        <div class="navbar">
+            <div id="nav-left">
+                <a href="#">My <span>Portfolio</span></a>
+            </div>
+            <div id="nav-right">
+                <a href="/" class="active">Home</a>
+                <a href="#projectSection">Projects</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+        <!-- Header Container -->
+        <div class="header_container" id="header_container">
+            <!-- Left Header Sub Container -->
+            <div id="subContainer_left">
+                <h3>MERN Developer</h3>
+                <h1>Hi, I'm <span id="name"></span></h1>
+                <p>I'm a MERN developer experience in both Frontend and Backend technologies. I've got hands-on skills
+                    in web developing using the MERN stack, which includes MongoDB, Express js, React js and Node js.
+                </p>
+                <a id="cv-link"><button>Download my CV</button></a>
+                <div class="socialIcons">
+                    <a id="linkedIn_link" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a id="gitHub_link" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Right Header Sub Container -->
+            <div id="subContainer_right">
+                <div class="rightImg">
+                    <img src="assets/ajay.jpg" alt="Ajay Sahoo Profile" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="mainContentSection">
+        <div class="aboutSection">
+            <h6>Know me</h6>
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea, ipsum, eos consectetur, excepturi ad
+                incidunt aspernatur sunt beatae porro temporibus animi neque recusandae tenetur dicta quas voluptas quia
+                nemo asperiores laboriosam praesentium impedit quidem eveniet. Temporibus quos adipisci nulla!
+                Voluptates ratione asperiores rerum doloribus magnam maiores praesentium nostrum? Eaque soluta pariatur
+                necessitatibus cumque optio dolor odit veniam cum, beatae dicta, consectetur asperiores illo, ab aut
+                minus odio! Libero fugiat impedit natus ut quasi! Quia beatae deserunt nam perferendis exercitationem
+                rerum, voluptate quibusdam excepturi recusandae cum quos nihil praesentium eius tempore explicabo
+                aliquam animi sunt repudiandae doloremque molestias! Tempora, magnam.</p>
+            <a href="/about.html"><button>Explore More <span><i class="bi bi-arrow-right"></i></span></button></a>
+        </div>
+        <div class="projectSection" id="projectSection">
+            <h6>My</h6>
+            <h2>Projects</h2>
+            <div class="projectContainer">
+                <div class="projectsCard">
+                    <img src="assets/project1.png" alt="Not Found!">
+                    <h5>My Project 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nam.</p>
+                    <div class="btns">
+                        <a href="https://restaurant-git-main-ajaysahoo2002.vercel.app/" target="_blank"><button
+                                id="btn1">Live preview</button></a>
+                        <a href="https://github.com/Ajaysahoo2002/Restaurant.git" target="_blank"><button
+                                id="btn2">Check on GitHub</button></a>
+                    </div>
+
+                </div>
+                <div class="projectsCard">
+                    <img src="assets/project2.png" alt="Not Found!">
+                    <h5>My Project 2</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nam.</p>
+                    <div class="btns">
+                        <a target="_blank"><button id="btn1">Live preview</button></a>
+                        <a target="_blank"><button id="btn2">Check on GitHub</button></a>
+                    </div>
+
+                </div>
+                <div class="projectsCard">
+                    <img src="assets/project3.png" alt="Not Found!">
+                    <h5>My Project 3</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nam.</p>
+                    <div class="btns">
+                        <a href="https://netflixclone-ajaysahoo2002.vercel.app/" target="_blank"><button id="btn1">Live
+                                preview</button></a>
+                        <a href="https://github.com/Ajaysahoo2002/netflixClone.git" target="_blank"><button
+                                id="btn2">Check on GitHub</button></a>
+                    </div>
+                </div>
+                <div class="projectsCard">
+                    <img src="assets/project4.png" alt="Not Found!">
+                    <h5>My Project 4</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nam.</p>
+                    <div class="btns">
+                        <a href="https://digital-calculator-git-main-ajaysahoo2002.vercel.app/" target="_blank"><button
+                                id="btn1">Live preview</button></a>
+                        <a href="https://github.com/Ajaysahoo2002/DigitalCalculator.git" target="_blank"><button
+                                id="btn2">Check on GitHub</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="contactSection" id="contactSection">
+            <h6>Contact</h6>
+            <h2>Contact with Me</h2>
+            <div class="contactDetails">
+                <div id="leftSction">
+                    <h3>Drop me a Message</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non totam eius eaque dolor harum error
+                        voluptatibus provident pariatur in quidem.</p>
+                    <div class="contacts">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+                    <div class="contacts">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>+91-8260643722</p>
+                    </div>
+                    <div class="contacts">
+                        <i class="bi bi-envelope"></i>
+                        <p>ajaysahoo1237@gmail.com</p>
+                    </div>
+                </div>
+                <div id="rightSction">
+                    <form>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                        <textarea name="message" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                        <button type="button" onclick="handleSubmit()">Send <span><i
+                                    class="bi bi-send-fill"></i></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <div class="socialMedia">
+                <div class="icons">
+                    <a href="www.linkedin.com/in/ajay-sahoo-7a2863166" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/Ajaysahoo2002/" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+                <div class="icons">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class="icons">
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="icons">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                </div>
+                <div class="icons">
+                    <a href=""><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <h5>&copy; 2021 Ajay Sahoo | All Rights Reserved</h5>
+        </div>
+    </footer>
+</body>
+
+</html>

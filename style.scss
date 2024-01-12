@@ -1,0 +1,541 @@
+// Variables
+@mixin textColor {
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+// Google Font Link
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: red;
+    background-color: black;
+}
+
+body {
+    background-color: rgb(31, 29, 29);
+    color: white;
+}
+
+.active {
+    @include textColor;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: .2s ease-in-out all;
+}
+
+hr {
+    margin: 1rem 5rem;
+    border-color: gray;
+}
+
+
+
+a:hover,
+i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    @include textColor;
+}
+
+i {
+    transition: .2s ease-in-out all;
+}
+
+i:hover {
+    transform: scale(1.5);
+}
+
+// Heading Section
+header {
+    width: 100%;
+}
+
+// Navbar box-shadow
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // Padding for navbar
+    padding: 1rem 2rem;
+
+    #nav-left {
+        span {
+            @include textColor;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+    }
+
+    #nav-right {
+        // Flex display for right nav items
+        display: flex;
+
+        a {
+            // Margin between right nav items
+            margin: 0 1.7rem;
+        }
+    }
+
+    // Styling for all nav links
+    a {
+        font-size: 1em;
+        padding: .3rem .5rem;
+    }
+}
+
+//    Header Container Section
+.header_container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem 0 5rem;
+
+    #subContainer_left {
+        width: 60%;
+
+        h1,
+        h3,
+        p {
+            margin-top: .5em;
+            letter-spacing: .11em;
+        }
+
+        h1,
+        h3 {
+            letter-spacing: .3em;
+        }
+
+        h1 {
+            font-family: 'Italianno', cursive;
+            @include textColor;
+            font-size: 2.7em;
+
+        }
+    }
+
+    #subContainer_right {
+        width: 40%;
+        text-align: center;
+    }
+
+    img {
+        height: 270px;
+        width: 270px;
+        border-radius: 50%;
+        background: linear-gradient(rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+        padding: 1rem;
+        box-shadow: 0 0 30px 30px rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184);
+    }
+
+
+    button {
+        margin-top: 1.5rem;
+        font-size: 1.1em;
+        color: white;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        border: transparent;
+        background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+        transition: .2s ease-in-out all;
+
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid rgb(255, 0, 217);
+        @include textColor;
+    }
+
+    .socialIcons {
+        display: flex;
+        width: 70%;
+        margin-top: 2rem;
+
+        a {
+            margin: 2rem;
+            transition: .2s ease-in-out all;
+        }
+
+        :first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+// Main Container Section
+
+.mainContentSection {
+    padding: 2rem 3rem;
+
+    // About Section
+    .aboutSection {
+        text-align: center;
+        padding: 0 4rem;
+
+        h6 {
+            text-align: right;
+            display: inline;
+            position: absolute;
+            margin-left: 1rem;
+            margin-top: -.9rem;
+            font-size: 1.2em;
+            @include textColor;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            letter-spacing: .12em;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            font-size: 1.1em;
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            background: transparent;
+            border: 1px solid rgb(255, 0, 217);
+            @include textColor;
+
+            i {
+                margin-left: 1rem;
+            }
+
+        }
+
+        button:hover {
+            cursor: pointer;
+            border: 1px solid transparent;
+            background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+            transition: .2s ease-in-out all;
+            color: white;
+        }
+
+    }
+
+    // Projects Section
+    .projectSection {
+        padding: 1rem 7rem;
+        margin-top: 3rem;
+        width: 100%;
+        text-align: center;
+
+        h6 {
+            text-align: right;
+            display: inline;
+            position: absolute;
+            margin-left: 1rem;
+            margin-top: -.9rem;
+            font-size: 1.2em;
+            @include textColor;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            letter-spacing: .12em;
+        }
+
+        img {
+            height: 200px;
+            width: 100%;
+        }
+
+        .projectContainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: .5rem;
+
+            .projectsCard {
+                border: transparent;
+                padding: .9rem;
+                border-radius: .5rem;
+                margin: 1rem 2rem;
+                text-align: left;
+                width: 36%;
+                box-shadow: -3px 3px 10px 2px rgba(255, 0, 128, .3);
+
+                h5,
+                p,
+                button {
+                    margin-top: .8rem;
+                }
+
+                .btns {
+                    text-align: center;
+
+                    button {
+                        margin-left: 1.3rem;
+                    }
+
+                    #btn1 {
+                        margin-left: 0;
+                        color: white;
+                        padding: .5rem 1rem;
+                        border-radius: 1rem;
+                        border: transparent;
+                        background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+                        transition: .2s ease-in-out all;
+                    }
+
+                    #btn1:hover {
+                        cursor: pointer;
+                        background: transparent;
+                        border: 1px solid rgb(255, 0, 217);
+                        @include textColor;
+                    }
+
+                    #btn2 {
+                        padding: .5rem 1rem;
+                        border-radius: 1rem;
+                        background: transparent;
+                        border: 1px solid rgb(255, 0, 217);
+                        @include textColor;
+                    }
+
+                    #btn2:hover {
+                        cursor: pointer;
+                        border: 1px solid transparent;
+                        background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+                        transition: .2s ease-in-out all;
+                        color: white;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    // Contact Section
+    .contactSection {
+        padding: 1rem 5rem;
+        text-align: center;
+        margin: 2rem -3rem;
+
+        h6 {
+            text-align: right;
+            display: inline;
+            position: absolute;
+            margin-left: 4rem;
+            margin-top: -.9rem;
+            font-size: 1.2em;
+            @include textColor;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            letter-spacing: .05em;
+        }
+
+        .contactDetails {
+            display: flex;
+            flex-direction: row;
+            margin: 1rem 3rem;
+
+
+            #leftSction {
+                width: 60%;
+                text-align: left;
+                padding: 1rem 2rem;
+                font-size: 1.1em;
+
+                h3,
+                p {
+                    margin-bottom: .5rem;
+                }
+
+                .contacts {
+                    display: flex;
+                    width: 100%;
+                    justify-content: left;
+                    align-items: center;
+                    margin: .8rem 0;
+                    padding: .5rem 0;
+
+                    p {
+                        margin-left: 1rem;
+                    }
+
+                    i {
+                        padding: .5rem;
+                    }
+
+                    box-shadow:-3px 3px 10px 2px rgb(46, 43, 43);
+                    border-radius: .5rem;
+                }
+            }
+
+            #rightSction {
+                width: 40%;
+                margin-left: .5rem;
+                padding: 1rem 2rem;
+                font-size: 1.1em;
+                box-shadow: -3px -3px 10px 2px rgb(46, 43, 43);
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    input,
+                    textarea {
+                        margin: .3rem 0;
+                        padding: .5rem;
+                        border-radius: .5rem;
+                        border-color: transparent;
+                        background-color: rgb(22, 21, 21);
+                        color: white;
+                    }
+
+                    button {
+                        color: white;
+                        padding: .5rem 2rem;
+                        border-radius: .5rem;
+                        background-color: rgb(22, 21, 21);
+                        border: transparent;
+                        transition: .2s ease-in-out all;
+                        width: fit-content;
+
+                        i {
+                            margin-left: 1rem;
+                        }
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                        background-color: blue;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+// Footer Section
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .socialMedia {
+        display: flex;
+        margin: 1rem;
+
+        i {
+            margin: 1rem;
+            padding: .5rem;
+            background-color: rgb(22, 21, 21);
+            border-radius: .3rem;
+        }
+    }
+}
+
+// Responsive page of device those width<480px
+@media only screen and (max-width:480px) {
+
+    body {
+        font-size: .7em;
+    }
+
+    .navbar {
+        padding: 0.3rem .5rem;
+
+        #nav-right {
+            a {
+                margin: 0 .5rem;
+            }
+        }
+    }
+
+    .header_container {
+        width: 100%;
+        padding: 0 1rem;
+        height: 40vh;
+
+        img {
+            display: none;
+        }
+
+        #subContainer_left {
+            width: 100%;
+
+            h1,
+            h3 {
+                font-size: 1.2em;
+            }
+
+            p {
+                width: 120%;
+            }
+        }
+        .socialIcons{
+            width: 100%;
+        }
+    }
+
+    .mainContentSection {
+        padding: 0;
+
+        .projectSection {
+            padding: 0;
+
+            .projectContainer {
+                width: 100%;
+
+                .projectsCard {
+                    width: 42%;
+                    margin: 1rem;
+
+                    img {
+                        height: 150px;
+                    }
+
+                    .btns {
+                        display: flex;
+
+                        button {
+                            font-size: .1em;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+        }
+        .contactSection{
+            width: 100%;
+            padding: 0;
+            .contactDetails{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                #leftSction{
+                    display: none;
+                }
+                #rightSction{
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

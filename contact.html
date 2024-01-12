@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- .js Link -->
+    <!-- <script src="app.js"></script> -->
+
+    <!-- Link for bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div id="nav-left">
+                <a href="#">My <span>Portfolio</span></a>
+            </div>
+            <div id="nav-right">
+                <a href="/index.html">Home</a>
+                <a href="#projectSection">Projects</a>
+                <a href="/about.html">About</a>
+                <a class="active">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="mainContainer">
+            <div class="parent">
+                <div class="leftPart">
+                    <h2>Get in Touch With Me:</h2>
+                    <img src="assets/contactImage.jpg" alt="Not Found!">
+                </div>
+                <div class="rightPart">
+                    <form>
+                        <label for="">Name :</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                        <label for="">Email :</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+                        <textarea name="message" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                        <button onclick="handleSubmit()">Send <span><i class="bi bi-send-fill"></i></span></button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- Social Icons Section -->
+            <div class="socialMedia">
+                <a href="www.linkedin.com/in/ajay-sahoo-7a2863166" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Ajaysahoo2002/" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Form validation
+        function handleSubmit() {
+            var name = document.querySelector(".mainContainer #name").value;
+            var email = document.querySelector(".mainContainer #email").value;
+            var message = document.querySelector(".mainContainer #message").value;
+
+            if (name !== "" && email !== "") {
+                alert("Hii " + name + " Thankyou for your Responce....");
+            }
+            else {
+                alert("Please filled the above Details");
+            }
+        }
+    </script>
+</body>
+
+</html>

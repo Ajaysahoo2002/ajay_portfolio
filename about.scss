@@ -1,0 +1,343 @@
+// Variables
+@mixin textColor {
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: red;
+    background-color: black;
+}
+
+body {
+    background-color: rgb(31, 29, 29);
+    color: white;
+}
+
+.active {
+    @include textColor;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease-in-out all;
+}
+
+a:hover,
+i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    @include textColor;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.navbar #nav-left span {
+    @include textColor;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.navbar #nav-right {
+    display: flex;
+}
+
+.navbar #nav-right a {
+    margin: 0 1.7rem;
+}
+
+.navbar a {
+    font-size: 1em;
+    padding: 0.3rem 0.5rem;
+}
+
+.headerContainer {
+    width: 100%;
+
+    .subContainer {
+        z-index: 1;
+        position: absolute;
+        color: black;
+        left: 20%;
+        top: 38%;
+        width: 28%;
+        transform: rotate(-12deg);
+
+        h1 {
+            margin: 1rem 0;
+            @include textColor;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            font-size: 1.1em;
+            color: white;
+            padding: .5rem 1rem;
+            border-radius: 1rem;
+            border: transparent;
+            background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+            transition: .2s ease-in-out all;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid rgb(255, 0, 217);
+            @include textColor;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 90vh;
+        z-index: -1;
+    }
+}
+
+.mainContainer {
+    .firstPart {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .subSection {
+            padding: 1rem 5rem;
+
+            p:last-child {
+                margin-top: 1rem;
+            }
+        }
+
+        #leftSection {
+            padding: 2rem 5rem;
+        }
+    }
+
+    .secondSection {
+        width: 100%;
+        margin-top: 5rem;
+
+        img {
+            width: 100%;
+            height: 70vh;
+            z-index: -1;
+            position: absolute;
+        }
+
+        .subContainer {
+            background-color: rgba(0, 0, 0, .78);
+            height: 70vh;
+            width: 100%;
+            z-index: 1;
+            justify-content: left;
+            align-items: flex-start;
+
+            .subSectionPart {
+                padding: 1rem 4rem;
+                width: 100%;
+
+            }
+
+            .rangePart {
+                margin-top: 1rem;
+            }
+
+            #leftPart {
+                position: absolute;
+                width: 40%;
+                left: 5rem;
+                margin-top: 10rem;
+
+                h2 {
+                    margin-bottom: 1rem;
+                    @include textColor;
+                }
+            }
+
+            #rightPart {
+                width: 30%;
+                position: absolute;
+                margin-top: 10rem;
+                right: 15rem;
+                background: linear-gradient(45deg, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+
+            }
+
+            .parent {
+                height: 2.5vh;
+                background-color: grey;
+                border-radius: 2rem;
+                margin-top: .5rem;
+
+                .child {
+                    height: 2.5vh;
+                    background-color: white;
+                    border-radius: 2rem .5rem .5rem 2rem;
+
+                    p {
+                        text-align: right;
+                        margin-right: 1rem;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .experienceSection {
+        padding: 2rem 5rem;
+
+        h1 {
+            @include textColor;
+        }
+
+        .parentContainer {
+            margin: 2rem 5rem;
+
+            .childSubContainer {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                box-shadow: 0 0 5px 5px rgb(56, 55, 55);
+                padding: .5rem .8rem;
+
+                i {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                }
+
+
+            }
+
+            .childSubContainer:hover {
+                cursor: pointer;
+            }
+
+            .details {
+                padding: .5rem .8rem;
+                display: none;
+
+                p {
+                    margin: 1rem 0;
+                }
+            }
+
+        }
+    }
+}
+
+// Footer Section
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .socialMedia {
+        display: flex;
+        margin: 1rem;
+
+        i {
+            margin: 1rem;
+            padding: .5rem;
+            background-color: rgb(22, 21, 21);
+            border-radius: .3rem;
+        }
+    }
+}
+
+// Responsive page of device those width<480px
+@media only screen and (max-width:480px) {
+    body {
+        font-size: .7em;
+    }
+
+    .navbar {
+        padding: 0.3rem .5rem;
+
+        #nav-right {
+            a {
+                margin: 0 .5rem;
+            }
+        }
+    }
+
+    .headerContainer {
+        .subContainer {
+            top: 16%;
+            left: 24%;
+
+            h1,
+            p,
+            button {
+                font-size: .8em;
+            }
+        }
+
+        img {
+            height: 40vh;
+        }
+    }
+
+    .mainContainer {
+        .firstPart {
+            .subSection,#leftSection {
+                padding: 0 .5rem;
+            }
+            #leftSection {
+                padding-top:5rem ;
+            }
+        }
+        .secondSection{
+            img{
+                height: 60vh;
+            }
+            .subContainer{
+                display: flex;
+                flex-direction: column;
+                height: 60vh;
+                #leftPart{
+                    position: relative;
+                    left: 0;
+                    width: 100%;
+                    margin-top: 0;
+                }
+                #rightPart{
+                    width: 100%;
+                    position: relative;
+                    margin-top: 0;
+                    right: 0;
+                    background: transparent;
+                }
+            }
+        }
+        .experienceSection{
+            padding:1rem 2rem;
+            h1{
+                font-size: 1.5em;
+            }
+            .parentContainer{
+                margin: 0;
+                font-size: .5em;
+            }
+        }
+    }
+}

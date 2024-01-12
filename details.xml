@@ -1,0 +1,94 @@
+<details>
+    <PersonalInformation>
+        <Name>Ajay Sahoo</Name>
+        <Title>Frontend Developer</Title>
+        <Contact>
+            <Phone>+91-8260643722</Phone>
+            <Email>ajaysahoo1237@gmail.com</Email>
+            <LinkedIn>https://www.linkedin.com/in/ajay-sahoo-7a2863166</LinkedIn>
+            <GitHub>https://github.com/Ajaysahoo2002</GitHub>
+            <Cv>https://drive.google.com/file/d/1_5NzSH5rSPRPczgykO5gtNP4-RyHn3Rj/view?usp=drivesdk
+                <Cv/>
+                <Address>Bagdega, Rourkela, Odisha</Address>
+            </Contact>
+        </PersonalInformation>
+        <Summary>
+    Dedicated and skilled frontend developer, offering proficiency in graphic design tools and front-end development languages. Adept at navigating content management systems, optimizing for search engines, and ensuring cross-browser compatibility. Adaptable and communicative.
+  </Summary>
+        <Experience>
+            <Position>Trainee</Position>
+            <Company>Unikaksha</Company>
+            <Date>05/2023 - 10/2023</Date>
+            <Description>
+      Completed a comprehensive 6-month training program in MERN (MongoDB, Express.js, React.js, Node.js) stack development. Acquired hands-on experience in building dynamic and responsive web applications. Successfully implemented a variety of projects, including a Netflix Clone with user authentication, a Restaurant Webpage with enhanced user experience, and a Blood Bank Webpage facilitating user registration and database management. Collaborated with fellow trainees on real-world projects, enhancing teamwork and problem-solving skills.
+    </Description>
+        </Experience>
+        <Projects>
+            <Project1>
+                <Name>Netflix Clone</Name>
+                <Link>https://netflixclone-ajaysahoo2002.vercel.app/</Link>
+                <Description>
+        It includes user signup and sign in, dynamic content updates, smooth video streaming, search functionality, and responsive design. Leveraging MongoDB, Express.js, React, and Node.js, the project offers users an immersive streaming experience. With secure database management and hosting capabilities.
+      </Description>
+            </Project1>
+            <Project2>
+                <Name>Restaurant Webpage</Name>
+                <Link>https://restaurant-git-main-ajaysahoo2002.vercel.app/</Link>
+                <TechStack>HTML, CSS, JavaScript, jQuery</TechStack>
+                <Description>
+        Offers a visually appealing and good level of user-friendly experience.
+      </Description>
+            </Project2>
+            <Project3>
+                <Name>LinkedIn Webpage</Name>
+                <TechStack>HTML5, CSS3, JavaScript</TechStack>
+                <Description>
+        This project enables users to register as donors, request blood, and offers administrators the ability to manage the database. With a user-friendly interface, it provides a seamless experience for both donors and recipients.
+      </Description>
+            </Project3>
+        </Projects>
+        <Achievements>
+            <Achievement>
+                <Title>Outstanding Performance in Web Development Training (Unikaksha)</Title>
+                <Description>
+        Recognized for exceptional dedication and proficiency during the 6-month MERN stack training. Successfully completed challenging projects, demonstrating a deep understanding of modern web development technologies.
+      </Description>
+            </Achievement>
+            <Achievement>
+                <Title>Innovative Web Solutions</Title>
+                <Description>
+        Developed and implemented creative and user-friendly solutions in various web projects, such as the Restaurant Webpage and Blood Bank Webpage, showcasing innovation and problem-solving skills.
+      </Description>
+            </Achievement>
+        </Achievements>
+        <Skills>
+            <ClientSide>
+                <HTML5 />
+                <CSS3 />
+                <JavaScript />
+                <jQuery />
+                <AJAX />
+                <ReactJS />
+            </ClientSide>
+            <ServerSide>
+                <NodeJS />
+                <Express />
+                <SQL />
+                <MongoDB />
+            </ServerSide>
+        </Skills>
+        <Education>
+            <Degree>BSC in Computer Science</Degree>
+            <College>Government Autonomous College Rourkela</College>
+            <Date>2020 - 2023</Date>
+            <Location>Rourkela, Odisha</Location>
+            <GPA>7.8/10.0</GPA>
+        </Education>
+        <Education>
+            <Degree>PGDCA</Degree>
+            <College>SeeNet Consultancy Pvt. Limited</College>
+            <Date>09/2021 - 09/2022</Date>
+            <Location>Sector 5, Rourkela, Odisha</Location>
+            <Percentage>81.28%</Percentage>
+        </Education>
+    </details>
